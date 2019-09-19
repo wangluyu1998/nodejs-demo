@@ -1,5 +1,6 @@
 #!/usr/bin/node
 
+//process.argv返回一个数组
 //console.log(process.argv.length);
 //console.log(process.argv);
 

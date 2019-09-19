@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-
+//输出当前目录名、文件名
 console.log('dir name:',__dirname);
 console.log('file name:',__filename);
 
@@ -11,6 +11,7 @@ console.log('file name',file);
 //windows data file
 file = __dirname + '\\data\\db.xml';
 
+//path.join() 
 const path = require('path');
 fileName = path.join(__dirname,'views','login.html');
-console.log('fileName:',fileName);
+console.log('file name:',fileName);

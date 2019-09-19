@@ -1,6 +1,5 @@
 #!/usr/bin/node
 
-
 function longTask () {
   
   var num = 0;
