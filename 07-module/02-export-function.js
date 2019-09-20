@@ -7,6 +7,7 @@
  * @returns {undefined}
  */
 function circle(radius){
+
   function area(){
     return Math.PI * radius*radius;
   }
@@ -14,10 +15,10 @@ function circle(radius){
   function circumference(){
     return 2*Math.PI*radius;
   }
+
   return {
     area:area,
     circumference:circumference
-
   }
 }
 
