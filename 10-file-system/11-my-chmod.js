@@ -8,7 +8,7 @@ if(process.argv.length != 4){
   process.exit(1);
 }
 try{
-   fs.chmodSync(dst, parseInt(mod,8));
+  fs.chmodSync(dst, parseInt(mod,8));
 }catch(e){
   console.error(e.message);
   process.exit(2);

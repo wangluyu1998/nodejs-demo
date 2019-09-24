@@ -8,7 +8,7 @@ timeId.unref();
 
 function loop(){
   console.log('I will loop forever!');
-};
+}
 
 //取消定时器
 setTimeout(() => {

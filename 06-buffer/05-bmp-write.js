@@ -25,12 +25,12 @@ buf.writeInt32LE(height, 0x16);
 
 // data
 for(var i=54; i<totalSize; i+=4) {
-   buf.writeUInt32LE(0xff0000ff, i);
+  buf.writeUInt32LE(0xff0000ff, i);
 }
 
 fs.writeFile('./out.bmp', buf, (err) => {
-    if(err != null) {
-        console.error(err);
-        process.exit(1);
-    }
+  if(err != null) {
+    console.error(err);
+    process.exit(1);
+  }
 });

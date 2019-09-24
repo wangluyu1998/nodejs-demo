@@ -1,6 +1,7 @@
 #!/usr/bin/node
 
-const log = console.log;
+const log = console.log,
+      pi = Math.PI;
 require('./03-global.js');
 
 log('pi:',pi);

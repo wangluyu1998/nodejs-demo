@@ -13,5 +13,5 @@ file = __dirname + '\\data\\db.xml';
 
 //path.join() 
 const path = require('path');
-fileName = path.join(__dirname,'views','login.html');
+const fileName = path.join(__dirname,'views','login.html');
 console.log('file name:',fileName);

@@ -4,7 +4,8 @@
 const EventEmitter = require ('events').EventEmitter;
 
 function Dog(name,energy){
-  var _name,_energy;
+  var _name = name;
+  var _energy = energy;
   var that = this;
 
   EventEmitter.call(this);
@@ -19,7 +20,7 @@ function Dog(name,energy){
     }else{
       clearInterval(timer);
     }
-  },1000)
+  },1000);
 }
 this.getName = () => _name;
 this.getEnergy = () => _energy;

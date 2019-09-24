@@ -31,7 +31,7 @@ var html = ''
   + '<body>'
     + '<img alt="'+path.basename(file,ext)+'"src="'+ uriData +'">'
   + '</body>'
-  + '</html>'
+  + '</html>';
 http.createServer((req,res)=>{
   console.log(req.headers);
   console.log(req.url + '\n');

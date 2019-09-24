@@ -18,4 +18,4 @@ e.on('hello',function(){
 e.on('bye',function(){
   console.log('bye event emit');
   process.exit();
-})
+});

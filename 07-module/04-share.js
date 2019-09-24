@@ -3,7 +3,7 @@
 var count = 0;
 
 //定义构造函数
-function Num(){};
+function Num(){}
 
 Num.prototype.add = () => count++;
 Num.prototype.getCount = () => count;

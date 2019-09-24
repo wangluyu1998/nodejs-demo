@@ -24,10 +24,10 @@ function Radio(station){
     _listeners[evt].forEach((fn)=>{
       fn.call(this,arg);
     });
-  };
+  }
 
   this.on = (evt,fn)=>{ 
-   if(typeof(_listeners[evt])==='undefined'){
+    if(typeof(_listeners[evt])==='undefined'){
       _listeners[evt] = [];
     }
     _listeners[evt].push(fn);
