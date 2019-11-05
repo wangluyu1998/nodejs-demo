@@ -3,11 +3,11 @@ const http = require('http'),
       log = console.log;
 
 http.createServer((req, res) => {
-  log('reqest method:',req.method);
+  log('HTTP request method:',req.method);
 
   switch(req.method){
     case 'GET':
-      select(req,res);
+      //select(req,res);
       break;
     case 'PUT':
       update(req,res);
@@ -17,6 +17,7 @@ http.createServer((req, res) => {
       break;
     case 'DELETE':
       remove(req,res);
+      break;
     default:
       err(req,res);
   }
@@ -30,7 +31,7 @@ http.createServer((req, res) => {
   function insert(req,res){
     res.end(req.method);
   }
-  function delete(req,res){
+  function remove(req,res){
     res.end(req.method);
   }
   function err(res){

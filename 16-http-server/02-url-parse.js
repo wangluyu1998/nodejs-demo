@@ -1,14 +1,15 @@
 #!/usr/bin/node
 const http = require('http'),
       url = require('url'),
-      qs = require("querystring"),
+      qs = require('querystring'),
       log = console.log;
 
 http.createServer((req, res) => {
-  log('reqest url:',req.url);
+  log('HTTP request url:',req.url);
 
   //var addr = url.parse(req.url);
-  var addr = url.parse('https://wangding:1234@www.baidu.com:8000/a/b/c?age=20&color=green#/def/efg');
+  var addr ='https://wangding:1234@www.baidu.com:8000/a/b/c?age=20&color=green#/def/efg';
+  
   parseURL(addr);
 
   res.end('ok!');
@@ -18,11 +19,15 @@ http.createServer((req, res) => {
 function parseURL(strURL){
   var path = url.parse(strURL);
 
-  log('path-name:',addr.pathname);
-  log('port':path.port);
-  log('host':path.host);
-  log('qs parse:',qs.parse(addr.query));
-  log('querystring',addr.query);
+  log('href:',path.href);
+  log('protocol:',path.protocol);
+  log('auth:',path.auth);
+  log('pathname:',path.pathname);
+  log('port',path.port);
+  log('host:',path.host);
+  log('search:',path.search);
+  log('hash',path.hash); 
+  log('query',path.query);
   log('url parse:', path.pathname.split('/'));
   log('qs parse:', qs.parse(path.query));
   

@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/wangluyu1998/nodejs-demo/issues"
   },
-  "homepage": "https://github.com/wangluyu1998/nodejs-demo#readme"
+  "homepage": "https://github.com/wangluyu1998/nodejs-demo#readme",
+  "dependencies": {
+    "mysql": "^2.17.1",
+    "sql": "^0.78.0"
+  }
 }
